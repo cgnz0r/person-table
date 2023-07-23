@@ -1,0 +1,68 @@
+.button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    word-break: keep-all;
+
+    &:disabled {
+        cursor: default;
+    }
+
+    &_icon {
+        padding: 4px;
+
+        &>.icon:hover {
+            color: $blue-hover;
+        }
+
+        &>.icon:active {
+            color: $blue-active;
+        }
+    }
+
+    &_text {
+        background: $blue;
+        color: $light;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 6px;
+        font-weight: 600;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            padding: 12px;
+        }
+
+        &:hover {
+            background: $blue-hover;
+        }
+
+        &:active {
+            background: $blue-active;
+        }
+    }
+
+    &_remove-person {
+        background: $red;
+
+        &:hover {
+            background: $red-hover;
+        }
+
+        &:active {
+            background: $red-active;
+        }
+    }
+
+    &_copy-json {
+        padding: 8px;
+        background: transparent;
+        position: absolute;
+        right: 24px;
+        top: 36px;
+
+        &>.icon:active {
+            color: $dark;
+        }
+    }
+}

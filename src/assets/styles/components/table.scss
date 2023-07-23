@@ -1,0 +1,42 @@
+.table-container {
+    @media (max-width: 768px) {
+        width: 100%;
+        overflow-y: auto;
+    }
+}
+
+.table {
+    margin: 32px;
+    border-radius: 8px;
+    border-collapse: collapse;
+
+    @media (max-width: 768px) {
+        margin: 16px 0;
+        width: 100%;
+    }
+
+    & tr {
+        border: 1px solid $blue;
+    }
+
+    & tr:nth-child(odd) td {
+        background: $light-blue;
+    }
+
+    & th, & td {
+        padding: 18px;
+        text-align: left;
+    }
+
+    & th {
+        background: $blue;
+        color: $light;
+        font-weight: 600;
+        
+    }
+
+    & td {
+        max-width: 250px;
+        word-break: break-word;
+    }
+}

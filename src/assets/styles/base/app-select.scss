@@ -1,0 +1,14 @@
+.select {
+    padding: 8px;
+    border-radius: 6px;
+    background: $light;
+
+    &:focus-visible {
+        border: 1px solid $blue;
+        outline: none;
+    }
+
+    &:hover {
+        background: $light-blue;
+    }
+}

@@ -1,0 +1,13 @@
+.json-view {
+    position: relative;
+
+    & .textarea {
+        width: 450px;
+        height: 450px;
+        margin-top: 12px;
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}

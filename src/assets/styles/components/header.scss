@@ -1,0 +1,9 @@
+.header {
+    min-height: 80px;
+    width: 100%;
+    background: $primary;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

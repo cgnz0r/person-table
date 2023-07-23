@@ -1,0 +1,46 @@
+.input-wrapper {
+    & input {
+        background: $light;
+
+        &:hover {
+            background: $light-blue;
+        }
+    }
+
+    & label {
+        cursor: pointer;
+    }
+
+    &_text, &_number {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        & input {
+            padding: 8px 16px;
+            border: 1px solid $gray;
+            border-radius: 6px;
+    
+            &:focus-visible {
+                border: 1px solid $blue;
+                outline: none;
+            }
+        }
+
+        & label {
+            font-size: 14px;
+            color: $primary;
+        }
+    }
+
+    &_checkbox {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 8px;
+
+        & input {
+            cursor: pointer;
+        }
+    }
+}

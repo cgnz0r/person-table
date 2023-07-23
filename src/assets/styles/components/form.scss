@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & .button[type="submit"] {
+        margin-top: 12px;
+    }
+
+    &__error-message {
+      color: $red;
+      font-size: 12px;
+      margin-top: -9px;
+    }
+}

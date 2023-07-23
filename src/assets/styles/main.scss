@@ -1,0 +1,45 @@
+@import 'variables/_colors.scss';
+@import 'base/index.scss';
+@import 'components/header.scss';
+@import 'components/form.scss';
+@import 'components/table.scss';
+@import 'components/icons.scss';
+@import 'components/json-view.scss';
+@import 'base/app-modal.scss';
+@import 'base/app-button.scss';
+@import 'base/app-input.scss';
+@import 'base/app-select.scss';
+
+#app {
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: $dark;
+  background: $light;
+  min-height: 100vh;
+
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  color: $primary;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
