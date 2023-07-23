@@ -1,4 +1,4 @@
-# test-task
+# person-table showcase app
 
 ## Project Setup
 
